@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Form</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+	<form action="menu.html">
+		<h2>Sign Up</h2>
+		<label for="username">Username</label>
+		<input type="text" id="username" name="username">
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+]).{8,}" title="Password must contain at least 8 characters, including uppercase, lowercase, numeric, and special symbol." minlength="8" required>
+
+		<p>Password must contain:</p>
+		<ul>
+			<li>At least 8 characters</li>
+			<li>At least one uppercase letter</li>
+			<li>At least one lowercase letter</li>
+			<li>At least one numeric character</li>
+			<li>At least one special symbol</li>
+		</ul>
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<script type="text/javascript" src="signup.js"></script>
+</body>
+</html>
+
+
+

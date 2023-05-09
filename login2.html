@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    <link rel="stylesheet" href="login2.css">
+	<script>
+		function login() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+			if (username == "thamizhvendhan" && password == "cit.chennai") {
+				window.location = "menu.html";
+			} else {
+				alert("Invalid login . Please try again.");
+			}
+		}
+	</script>
+</head>
+<body>
+	<h2 style="text-align: center;">Login</h2>
+	<form action="menu.html">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<input type="button" value="Login" onclick="login()">
+        <p>did't have an account?<a href="signUp.html">sign Up</a></p>
+	</form>
+</body>
+</html>
